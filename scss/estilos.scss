@@ -1,0 +1,334 @@
+ $principal: #f6d6cd;
+ $secundario: #2b1612;
+ $terciario: #7c482e;
+ $cuarto: #532d1a;
+
+ @font-face {
+     font-family: GoldieRainbow;
+     src: url("../fuentes/GoldieRainbow.ttf");
+
+ }
+
+ body {
+     background: #f6d6cd9d;
+ }
+
+ //NAV BAR
+ .barra {
+     background: $principal;
+
+ }
+
+ .TextoPag {
+     font-family: GoldieRainbow;
+     color: #303030;
+     font-size: 2.5rem;
+     transition: .5s;
+ }
+
+ .TextoPag:hover {
+     transform: scale(1.2);
+     color: $secundario;
+ }
+
+ .barraFuentes {
+     color: #303030;
+     font-size: 1.2rem;
+     transition: .5s;
+     font-family: 'Montserrat', sans-serif;
+
+ }
+
+ .barraFuentes:hover {
+     transform: scale(1.2);
+     color: $secundario;
+ }
+
+ //BOTON COMPRA
+ .go-top-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    z-index: -1;
+
+}
+
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: linear-gradient(150deg, $terciario, $cuarto);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+
+}
+
+.go-top-button i {
+    position: absolute;
+    font-size: 1.3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    transition: .5s;
+}
+
+.show {
+    z-index: 10;
+}
+
+.show .go-top-button {
+    animation: popup .5s ease-in-out;
+    width: 4.6rem;
+    height: 4.6rem;
+    z-index: 11;
+}
+
+
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+    0% {
+        width: 0rem;
+        height: 0rem;
+    }
+
+    50% {
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+
+    100% {
+        width: 4.6rem;
+        height: 4.6rem;
+    }
+}
+
+
+ //CARRUSEL
+
+
+ .mensaje {
+     font-family: 'Inconsolata', monospace;
+     color: $terciario;
+     font-size: 2.5rem;
+
+ }
+
+ .carrusel {
+     height: 100%;
+     width: 100%;
+     transition: .2s;
+ }
+
+ .carruselimagen {
+     height: 60vh;
+     border: 0px solid;
+     padding: 10px;
+     box-shadow: 5px 5px 8px #0000008c;
+
+ }
+
+ .carrusel:hover {
+     transform: scale(1.2);
+ }
+
+ //PRODUCTOS
+
+ .Productos {
+     font-family: 'Unica One', cursive;
+     color: $cuarto;
+     font-size: 3rem;
+     font-weight: bold;
+     margin-top: 8rem;
+
+ }
+
+ .Titulos {
+     font-family: 'Pompiere', cursive;
+     font-size: 3rem;
+     color: $cuarto;
+ }
+
+ .productoPaquete {
+     height: 5rem;
+ }
+
+
+
+ .caja {
+     //background: $principal;
+     border-radius: 1rem;
+     transition: .2s;
+     cursor: pointer;
+
+ }
+
+ .caja:hover {
+     transform: scale(1.1);
+ }
+
+ .paquete {
+     font-size: 1.5rem;
+     font-family: 'Quicksand', sans-serif;
+     color: $secundario;
+
+ }
+
+ .paqueteinfo {
+     font-size: 1.2rem;
+     font-family: 'Quicksand', sans-serif;
+     color: $secundario;
+ }
+
+
+ .precio {
+     font-size: 2rem;
+     font-family: 'Quicksand', sans-serif;
+     color: $secundario;
+     font-weight: bolder;
+
+ }
+
+ //GALERIA
+
+ .cajaGaleria {
+     margin: 1rem;
+ }
+
+
+
+ .imagenes {
+     background: #ffffff;
+     height: 20rem;
+     border: px solid;
+     padding: 12px;
+     transition: .2s;
+ }
+
+ .imagenes:hover {
+     box-shadow: 5px 5px 8px #00000062;
+     transform: scale(1.2);
+ }
+
+ //FOOTER
+ .pie {
+     background: rgb(50, 50, 50);
+     background: linear-gradient(180deg, #fac6b7, #f6d6cd);
+     padding-left: 7rem;
+     padding-right: 7rem;
+     width: 100%;
+     height: 100%;
+
+ }
+
+ .fuenteA {
+     font-size: 1.3rem;
+     color: #303030;
+ }
+
+ .fuenteB {
+     font-size: 1rem;
+     color: #303030;
+     ;
+ }
+
+ .fuenteC {
+     font-size: 1.2rem;
+     color: $terciario;
+     transition: all .5s;
+     text-decoration: none;
+
+ }
+
+ .fuenteC:hover {
+     color: $secundario;
+     text-shadow: 4px 4px 4px #7c482e;
+     text-decoration: none;
+
+ }
+
+ .fuenteD {
+     font-size: 1.1rem;
+     color: $terciario;
+     transition: all .5s;
+     font-family: 'Ubuntu', sans-serif;
+     text-align: left;
+ }
+
+ .fuenteD a {
+     color: $terciario;
+     text-decoration: none;
+     transition: all .5s;
+
+ }
+
+ .fuenteD a:hover {
+     color: $secundario;
+     text-shadow: 4px 4px 4px #7c482e;
+ }
+
+
+ .redsocial {
+     font-size: 3rem;
+     color: $terciario;
+     transition: all .5s;
+
+ }
+
+ .redsocial:hover {
+     color: $secundario;
+     text-shadow: 4px 4px 4px #7c482e;
+ }
+
+ .piepagina {
+     background: linear-gradient(90deg, rgb(34, 34, 34) 0%, rgba(0, 0, 0, 1) 100%);
+ }
+
+ .desarrollador {
+     font-family: 'Ubuntu', sans-serif;
+     color: #ffffff;
+     font-size: 1rem;
+     transition: .5s;
+ }
+
+ .desarrollador:hover {
+     transform: scale(1.0);
+     color: $secundario;
+     color: white;
+ }
+
+
+ .centrar {
+     height: 100%;
+     display: flex;
+     align-items: center;
+ }
+
+ .centrado {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .padre {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .hijo {
+     margin: 0 auto;
+
+ }
